@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  background-color: cornflowerblue;
+}
+
+
+body {
+  background-color: white;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body { height: 100%; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
