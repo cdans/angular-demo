@@ -8,7 +8,8 @@ import {WelcomeComponent} from './components/welcome/welcome.component';
 import {NumbersComponent} from './components/numbers/numbers.component';
 import {StatisticsComponent} from './components/numbers/statistics/statistics.component';
 import {RouterModule, Routes} from "@angular/router";
-import {MaterialModule} from "./material.module";
+import {MatTabsModule} from "@angular/material/tabs";
+import { I18nModule } from './i18n/i18n.module';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -27,8 +28,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
-
+    MatTabsModule,
+    I18nModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
