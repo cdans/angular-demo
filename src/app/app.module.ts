@@ -9,7 +9,9 @@ import {NumbersComponent} from './components/numbers/numbers.component';
 import {StatisticsComponent} from './components/numbers/statistics/statistics.component';
 import {RouterModule, Routes} from "@angular/router";
 import {MatTabsModule} from "@angular/material/tabs";
-import { I18nModule } from './i18n/i18n.module';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -29,10 +31,21 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    I18nModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory:  httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+}
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
 }
