@@ -10,6 +10,8 @@ body {
   background-color: white;
   justify-content: center;
   max-width: 800px;
+  width: 75%;
+  min-width: 350px;
   min-height: 100%;
   margin: auto;
   padding-top: 16px;

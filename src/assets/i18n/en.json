@@ -1,4 +1,10 @@
 {
-  "TestA": "Angular Multi Language Site",
-  "TestB": "What up?!"
+  "numbers": "Numbers",
+  "average": "Average",
+  "median": "Median",
+  "stdDev": "StdDev",
+  "add": "Add",
+  "welcome": "Welcome",
+  "welcomeText": "I hope that you like the demo.",
+  "home": "Home"
 }

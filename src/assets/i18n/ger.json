@@ -1,4 +1,10 @@
 {
-  "TestA": "Angular App mit vielen Sprachen",
-  "TestB": "Was los?!"
+  "numbers": "Zahlen",
+  "average": "Durchschnitt",
+  "median": "Median",
+  "stdDev": "SD",
+  "add": "Hinzufügen",
+  "welcome": "Willkommen",
+  "welcomeText": "Ich hoffe, euch gefällt die Demo!",
+  "home": "Startseite"
 }
