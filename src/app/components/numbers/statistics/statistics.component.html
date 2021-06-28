@@ -1,0 +1,10 @@
+<div class="container">
+  <p>{{'average' | translate}}: <ng-container *ngIf = "mean; else na" >{{mean}}</ng-container></p>
+  <p>{{'median' | translate}}: <ng-container *ngIf = "median ; else na">{{median}}</ng-container></p>
+  <p>{{'stdDev' | translate}}: <ng-container *ngIf = "stdDev ; else na">{{stdDev}}</ng-container></p>
+</div>
+<ng-container *ngIf = "median"></ng-container>
+
+<ng-template #na>
+  N/A
+</ng-template>

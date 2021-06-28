@@ -1,0 +1,11 @@
+.container {
+  padding: 16px;
+  border: gray solid 1px;
+  width: 300px;
+  margin: 8px;
+  float: left
+}
+
+.numbers {
+  margin-left: 16px;
+}

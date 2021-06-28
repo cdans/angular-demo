@@ -1,0 +1,19 @@
+.container {
+  border-bottom: black solid 1px;
+  width: 100%;
+  padding: 8px 0px;
+  margin: auto;
+}
+
+a {
+  color: gray;
+  margin: 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:hover{
+  color: black;
+}
+
+

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="numbers">
+    <div>
+      <input id="input" type="number">
+      <button id="add" (click)="addNumber()">{{"add" | translate}}</button>
+    </div>
+    <h4>{{'numbers' | translate}}:</h4>
+    <!--  cant add the DecimalPipe, dont know whta wrong with my setup {{number | number:'1.0-4'}}  -->
+    <p *ngFor="let number of this.numbers.reverse()">{{number}} </p>
+  </div>
+
+</div>
+<div class="container">
+  <app-statistics
+    [mean]="mean"
+    [median]="median"
+    [stdDev]="stdDev"
+  ></app-statistics>
+</div>
